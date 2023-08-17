@@ -1,0 +1,50 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1.5px solid #000;
+    margin: auto;
+}
+#dino{
+    width: 55px;
+    height: 50px;
+    background-size: 50px 50px ;
+    position: relative;
+    top: 75px;
+}
+#caktus {
+    width: 40px;
+    height: 60px;
+    background-size: 20px 40px;
+    position: relative;
+    top: 45px;
+    left:275px;
+    animation: caktusMov 2s infinite linear;
+}
+@keyframes caktusMov {
+    0%{
+        left: 275px;
+    }
+    100%{
+       left: -10px;
+    }
+}
+.jump{
+    animation: jump 2s  linear;
+}
+@keyframes jump {
+    0%{
+        top: 10px;;
+    }
+    30%{
+       top: 10px;
+    }
+    50%{
+        top: 80px;
+    }
+    80%{
+        top: 10px;
+    }
+    100%{
+        top: 50px;
+    }
+}
